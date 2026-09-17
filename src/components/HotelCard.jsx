@@ -1,6 +1,6 @@
 export default function HotelCard({ name, link }) {
     if (!name || !link) return null;
-  
+
     return (
       <div className="max-w-6xl mx-auto mt-4">
         <div className="md:ml-0 md:max-w-[40%] bg-[#fdf6ef] border border-[#e6e0da] rounded-xl px-5 py-4 shadow-sm font-serif flex items-center gap-4">

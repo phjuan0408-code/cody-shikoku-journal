@@ -209,7 +209,7 @@ const itineraryData = [
       },
       {
         src: "./images/tokushima/tokushima-dance-2.mp4",
-        type: "video" 
+        type: "video"
       },
     ],
     days: ["2025-01-07-2"],
@@ -224,7 +224,7 @@ const itineraryData = [
       },
       {
         src: "./images/tokushima/tokushima-cable-2.webp",
-        position: 50 
+        position: 50
       },
       {
         src: "./images/tokushima/tokushima-cable-3.webp",
@@ -251,7 +251,7 @@ const itineraryData = [
       },
       {
         src: "./images/tokushima/tokushima-bridge-2.webp",
-        position: 50 
+        position: 50
       },
       {
         src: "./images/tokushima/tokushima-bridge-3.webp",
@@ -424,5 +424,5 @@ const itineraryData = [
     days: ["2025-01-11-2"],
   },
 ];
-  
+
   export default itineraryData;

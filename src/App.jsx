@@ -5,6 +5,7 @@ import Takamatsu from "./pages/Takamatsu";
 import Tokushima from "./pages/Tokushima";
 import Matsuyama from "./pages/Matsuyama";
 import Food from "./pages/Food";
+import Itinerary from "./pages/Itinerary";
 import Day0 from "./pages/DayPages/Day0";
 import Day1 from "./pages/DayPages/Day1";
 import Day2 from "./pages/DayPages/Day2";
@@ -30,6 +31,7 @@ function App() {
           <Route path="/tokushima" element={<Tokushima />} />
           <Route path="/matsuyama" element={<Matsuyama />} />
           <Route path="/food" element={<Food />} />
+          <Route path="/itinerary" element={<Itinerary />} />
 
           {/* 新增每日行程頁面 */}
           <Route path="/day0" element={<Day0 />} />

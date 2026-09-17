@@ -13,10 +13,10 @@ export default function ShikokuMap() {
   const navigate = useNavigate();
 
   const regionColors = {
-    香川県: "#F4A261",
-    徳島県: "#2A9D8F",
-    愛媛県: "#E76F51",
-    高知県: "#A9A9A9",
+    香川県: "#d8b877",
+    徳島県: "#8dac9b",
+    愛媛県: "#ce947c",
+    高知県: "#d6d9cb",
   };
 
   const regionLinks = {
@@ -36,7 +36,7 @@ export default function ShikokuMap() {
   const isMobile = useMediaQuery({ maxWidth: 640 }); // tailwind sm
 
   return (
-    <div className="flex justify-center items-center -mb-20">
+    <div className="flex justify-center items-center ">
         <ComposableMap
           projection="geoMercator"
           projectionConfig={{
@@ -59,6 +59,10 @@ export default function ShikokuMap() {
                 >
                   <Geography
                     geography={geo}
+                    role={isClickable ? "link" : undefined}
+                    tabIndex={isClickable ? 0 : -1}
+                    aria-label={isClickable ? `閱讀${name.replace("県", "")}旅記` : name}
+                    onKeyDown={(e) => { if(isClickable && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); navigate(regionLinks[name]); } }}
                     onClick={() => {
                       if (isClickable) navigate(regionLinks[name]);
                     }}
@@ -93,7 +97,7 @@ export default function ShikokuMap() {
                           : ""
                       }
                       style={{
-                        fontSize: isMobile ? 18 : 10,
+                        fontSize: isMobile ? 24 : 18,
                         fill: "#111",
                         pointerEvents: "none",
                         fontWeight: "bold",

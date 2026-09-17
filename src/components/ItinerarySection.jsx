@@ -14,7 +14,7 @@ export default function ItinerarySection({ title, dates }) {
   if (items.length === 0) return null;
 
   return (
-    <section className="max-w-6xl mx-auto px-4 mt-12">
+    <section className="story-grid max-w-6xl mx-auto px-4 mt-12">
       <h2 className="text-2xl font-bold text-[#504339] mb-6 font-serif">{title}</h2>
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {items.map((item, idx) => (
@@ -44,7 +44,7 @@ function ItineraryCard({ item }) {
   const hasMultipleSlides = parsedMedia.length > 1;
 
   return (
-    <div className="bg-white rounded-xl shadow-md overflow-hidden">
+    <div className="story-card bg-white rounded-xl shadow-md overflow-hidden">
       <div className="relative">
         <div ref={sliderRef} className="keen-slider">
           {parsedMedia.map((media, i) => (

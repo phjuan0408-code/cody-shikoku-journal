@@ -1,89 +1,17 @@
-import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-
-const navLinks = [
-  { label: "Japan Map", href: "https://phjuan0408-code.github.io/nagoya-trip-2026/" },
-  { label: "Takamatsu", path: "/takamatsu" },
-  { label: "Tokushima", path: "/tokushima" },
-  { label: "Matsuyama", path: "/matsuyama" },
-  { label: "Food", path: "/food" },
-];
-
+import { japanUrl } from "../data/siteLinks";
+const links = [{label:"日本地圖",href:japanUrl},{label:"Cody 四國旅記",to:"/"},{label:"每日行程",to:"/itinerary"},{label:"沿途美食",to:"/food"}];
 export default function Navbar() {
-  const [menuOpen, setMenuOpen] = useState(false);
-  const { pathname } = useLocation();
-
-  return (
-    <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
-      <div className="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
-        <Link to="/" className="text-xl font-bold hover:text-blue-600 transition">
-          Goshikoku
-        </Link>
-
-        {/* 電腦版選單 */}
-        <ul className="hidden md:flex space-x-6 text-base font-medium">
-          {navLinks.map(({ label, path, href }) => (
-            <li key={label}>
-              {href ? (
-                <a
-                  href={href}
-                  className="hover:text-blue-500 transition text-gray-600"
-                >
-                  {label}
-                </a>
-              ) : (
-                <Link
-                  to={path}
-                  className={`hover:text-blue-500 transition ${
-                    pathname === path ? "text-blue-600 font-semibold" : "text-gray-600"
-                  }`}
-                >
-                  {label}
-                </Link>
-              )}
-            </li>
-          ))}
-        </ul>
-
-        {/* 手機版選單按鈕 */}
-        <button
-          className="md:hidden"
-          onClick={() => setMenuOpen((prev) => !prev)}
-          aria-label="Toggle menu"
-        >
-          {menuOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
-      </div>
-
-      {/* 手機版選單項目 */}
-      {menuOpen && (
-        <ul className="md:hidden px-4 pb-4 space-y-2 bg-white shadow">
-          {navLinks.map(({ label, path, href }) => (
-            <li key={label}>
-              {href ? (
-                <a
-                  href={href}
-                  className="block py-1 text-base text-gray-700"
-                  onClick={() => setMenuOpen(false)}
-                >
-                  {label}
-                </a>
-              ) : (
-                <Link
-                  to={path}
-                  className={`block py-1 text-base ${
-                    pathname === path ? "text-blue-600 font-semibold" : "text-gray-700"
-                  }`}
-                  onClick={() => setMenuOpen(false)}
-                >
-                  {label}
-                </Link>
-              )}
-            </li>
-          ))}
-        </ul>
-      )}
-    </nav>
-  );
+ const [open,setOpen] = useState(false);
+ const {pathname} = useLocation();
+ const gateway = false;
+ useEffect(() => { setOpen(false); },[pathname]);
+ useEffect(() => { const close = (e) => { if(e.key === "Escape") setOpen(false); }; window.addEventListener("keydown",close); return () => window.removeEventListener("keydown",close); },[]);
+ const renderLink = (link) => link.href ? <a key={link.label} href={link.href} className="nav-link">{link.label}</a> : <NavLink key={link.to} to={link.to} end className="nav-link" onClick={()=>setOpen(false)}>{link.label}</NavLink>;
+ return <nav className="journal-nav" aria-label="主要導覽"><div className="nav-inner">
+  <Link className="journal-brand" to="/"><span className="brand-dot" aria-hidden="true"/><span><span className="brand-title">{gateway ? "Cody 日本旅記" : "Cody 四國旅記"}</span><span className="brand-caption">CODY'S TRAVEL JOURNAL</span></span></Link>
+  {gateway ? <span className="nav-note">JAPAN · 2025 — 2026</span> : <><div className="nav-links">{links.map(renderLink)}</div><button className="menu-toggle" aria-label={open ? "關閉選單" : "開啟選單"} aria-expanded={open} aria-controls="mobile-navigation" onClick={()=>setOpen(!open)}>{open ? <X size={22}/> : <Menu size={22}/>}</button></>}
+ </div>{open && !gateway && <div id="mobile-navigation" className="mobile-menu">{links.map(renderLink)}</div>}</nav>;
 }

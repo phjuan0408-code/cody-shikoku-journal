@@ -29,7 +29,7 @@ export default function FoodCard({ food }) {
   const hasMultipleImages = parsedImages.length > 1;
 
   return (
-    <div className="relative bg-white p-4 rounded-xl shadow overflow-hidden flex flex-col justify-between h-full">
+    <div className="story-card relative bg-white p-4 rounded-xl shadow overflow-hidden flex flex-col justify-between h-full">
       <div>
         <div className="relative">
           <span className="absolute -top-3 -right-3 z-10 bg-white/90 text-xs px-3 py-1 rounded-full text-gray-700 shadow">

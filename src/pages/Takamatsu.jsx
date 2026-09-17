@@ -16,7 +16,7 @@ export default function Takamatsu() {
     <div className="bg-[#fdf6ef] py-12 px-4 font-serif">
       {/* 城市介紹區塊 */}
       <CityIntro
-        title="About Takamatsu"
+        title="高松與小豆島"
         subtitle="香川縣 高松市"
         imageSrc="./images/takamatsu/takamatsu-ferry.webp"
         imageAlt="Takamatsu ferry"

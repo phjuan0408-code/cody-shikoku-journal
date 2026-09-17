@@ -14,7 +14,7 @@ export default function Ehime() {
   return (
     <div className="bg-[#fdf6ef] py-12 px-4 font-serif">
       <CityIntro
-        title="About Tokushima"
+        title="德島與鳴門"
         subtitle="德島縣 徳島市"
         imageSrc="./images/tokushima/tokushima-bridge.webp"
         imageAlt="Naruto Bridge"
@@ -23,14 +23,14 @@ export default function Ehime() {
           "每年夏日，阿波舞便喚醒城市的心跳。鼓聲與步伐讓街道騷動，平時靜謐的德島，也有屬於自己的熱情與節奏。",
         ]}
       />
-      
+
       <HotelCard
         name="德島克萊門特JR酒店"
         link="https://maps.app.goo.gl/XURLGF6kovLEU6N39"
       />
 
       <div
-        id="day-cards" 
+        id="day-cards"
         className="max-w-5xl mx-auto pt-10 mt-12 px-4 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 font-serif"
       >
         {days.map((item) => (

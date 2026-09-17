@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { ArrowLeft, ArrowRight, Home } from "lucide-react";
 
-export default function DayNavigator({ prev, prevLabel, next, nextLabel, homeLink }) {
+export default function DayNavigator({ prev, prevLabel, next, nextLabel }) {
   return (
     <div className="mt-12 font-serif text-[#504339]">
       <div className="grid grid-cols-3 items-center max-w-4xl mx-auto px-4 gap-4">
@@ -23,11 +23,11 @@ export default function DayNavigator({ prev, prevLabel, next, nextLabel, homeLin
         {/* 中：Home */}
         <div className="flex justify-center">
           <Link
-            to={`${homeLink}#day-cards`}
+            to="/itinerary"
             className="flex items-center gap-2 px-4 py-2 border border-[#ccc] rounded hover:bg-[#fdf3e6] transition text-sm sm:text-base"
           >
             <Home size={18} />
-            Home
+            行程目錄
           </Link>
         </div>
 

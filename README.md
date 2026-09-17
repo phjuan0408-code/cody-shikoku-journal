@@ -1,20 +1,27 @@
+# Cody 四國旅記
 
-# 四國七日旅遊紀錄網站 🇯🇵
+高松、德島與松山八天七夜旅記，包含行程、景點與沿途美食。
 
-這是一個記錄我們 2025 年春季四國七日旅程的網站，包含每日行程、美食記錄、景點介紹與個人心得。網站內容以圖文搭配呈現，並使用 React + TailwindCSS 製作，適合做為旅行紀錄與回憶收藏之用。
+## 三站入口
 
-👉 [點我前往網站](https://codyjuan.github.io/my-shikoku-trip/)
+- [Cody 日本旅記](https://phjuan0408-code.github.io/cody-japan-journal/)
+- [Cody 中部旅記](https://phjuan0408-code.github.io/cody-chubu-journal/)
+- [Cody 四國旅記](https://phjuan0408-code.github.io/cody-shikoku-journal/)
 
----
+## 開發與建置
 
-## 📌 內容簡介
+需要 Node.js 20。
 
-- 行程紀錄：涵蓋 Day0 至 Day7，每日安排與特色地點
-- 美食卡片：搭配圖片、地點與描述，介紹當地美食
-- 心得筆記：每一日皆有獨立旅行心得
-- 圖片展示：支援多張照片滑動、Lightbox 瀏覽
-- 城市頁面：整合城市中造訪過的景點與飲食推薦
+```sh
+npm ci
+npm start
+npm run build
+```
 
----
+建置輸出為 `build/`。本專案使用 HashRouter，保留原有內容頁路徑。
 
-> 本網站為個人旅遊紀錄用途，內容皆為實際拍攝與撰寫。
+## 發布
+
+GitHub Pages 設定選擇 **GitHub Actions**。推送至 `main` 後，`deploy-pages.yml` 會建置並發布。跨站連結指向同一帳號下的三個相鄰 repo 路徑。
+
+這是從已確認的本地新版重建的獨立專案，保留照片與旅行內容。新遠端尚待建立及首次上傳。
