@@ -7,9 +7,9 @@ import HotelCard from "../components/HotelCard";
 
 export default function Takamatsu() {
   const days = [
-    { day: "Day1", image: "./images/day1-nav.webp", link: "/day1" },
-    { day: "Day2", image: "./images/day2-nav.webp", link: "/day2" },
-    { day: "Day3", image: "./images/day3-1-nav.webp", link: "/day3" },
+    { day: "Day 02", image: "./images/day1-nav.webp", link: "/day1" },
+    { day: "Day 03", image: "./images/day2-nav.webp", link: "/day2" },
+    { day: "Day 04", image: "./images/day3-1-nav.webp", link: "/day3" },
   ];
 
   return (

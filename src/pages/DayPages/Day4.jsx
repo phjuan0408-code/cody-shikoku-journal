@@ -9,7 +9,7 @@ export default function Day4() {
     <div className="shikoku-day bg-[#fdf6ef] py-12 px-4 font-serif">
       <div className="max-w-4xl mx-auto text-center space-y-2 mb-12">
         <p className="text-sm text-[#888]">鳴門大橋・渦之道</p>
-        <h1 className="text-4xl font-bold text-[#504339]">Day 4</h1>
+        <h1 className="text-4xl font-bold text-[#504339]">Day 05</h1>
         <p className="text-[#777] text-sm">2025.01.08</p>
 
         <hr className="my-6 border-t border-[#e6e0da] max-w-[160px] mx-auto" />
@@ -33,7 +33,7 @@ export default function Day4() {
 
       {/* 心得筆記 */}
       <div className="mt-10 max-w-3xl mx-auto text-[#504339] text-lg leading-relaxed">
-        <h2 className="text-2xl font-bold mb-4">📒 Day 4 心得筆記</h2>
+        <h2 className="text-2xl font-bold mb-4">📒 Day 05 心得筆記</h2>
         <p>
           今天是期待已久的漩渦之旅！我們前往連接四國與淡路島的鳴門大橋，橋下正是以壯觀漩渦聞名的鳴門海峽。<br />
           <br />
@@ -47,9 +47,9 @@ export default function Day4() {
       <div className="mt-16">
         <DayNavigator
           prev="/day3"
-          prevLabel="Day 3"
+          prevLabel="Day 04"
           next="/day5"
-          nextLabel="Day 5"
+          nextLabel="Day 06"
           homeLink="/tokushima"
         />
       </div>

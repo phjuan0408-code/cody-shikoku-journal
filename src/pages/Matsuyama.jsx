@@ -6,9 +6,9 @@ import HotelCard from "../components/HotelCard";
 
 export default function matsuyama() {
   const days = [
-    { day: "Day5", image: "./images/day5-2-nav.webp", link: "/day5" },
-    { day: "Day6", image: "./images/day6-nav.webp", link: "/day6" },
-    { day: "Day7", image: "./images/day7-nav.webp", link: "/day7" },
+    { day: "Day 06", image: "./images/day5-2-nav.webp", link: "/day5" },
+    { day: "Day 07", image: "./images/day6-nav.webp", link: "/day6" },
+    { day: "Day 08", image: "./images/day7-nav.webp", link: "/day7" },
   ];
 
   return (

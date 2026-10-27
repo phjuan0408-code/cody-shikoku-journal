@@ -10,8 +10,9 @@ const days = [
  ["高松機場", "2025-01-11", ["matsuyama", "takamatsu"]],
 ];
 export const journalPlaces = {takamatsu:"高松",tokushima:"德島",matsuyama:"松山"};
+const hiddenSummaryTitles = new Set(["ZAG ZAG", "特急いしづち"]);
 export const journalDays = days.map(([title,date,placeIds],index) => {
  const stories = itineraryData.filter(item=>item.days?.some(day=>day.startsWith(date)));
  const media = stories.flatMap(item=>item.images || []).find(image=> typeof image === "string" ? /\.(webp|jpg|png)$/.test(image) : image.type !== "video");
- return {day:`Day ${index}`,title,date,placeIds,path:`/day${index}`,image:typeof media === "string" ? media : media?.src,note:stories.slice(0,3).map(item=>item.title).join(" · ")};
+ return {day:`Day ${String(index + 1).padStart(2, "0")}`,title,date,placeIds,path:`/day${index}`,image:typeof media === "string" ? media : media?.src,note:stories.slice(0,3).filter(item=>!hiddenSummaryTitles.has(item.title)).map(item=>item.title).join(" · ")};
 });

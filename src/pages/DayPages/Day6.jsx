@@ -9,7 +9,7 @@ export default function Day6() {
     <div className="shikoku-day bg-[#fdf6ef] py-12 px-4 font-serif">
       <div className="max-w-4xl mx-auto text-center space-y-2 mb-12">
         <p className="text-sm text-[#888]">松山城・道後溫泉</p>
-        <h1 className="text-4xl font-bold text-[#504339]">Day 6</h1>
+        <h1 className="text-4xl font-bold text-[#504339]">Day 07</h1>
         <p className="text-[#777] text-sm">2025.01.10</p>
 
         <hr className="my-6 border-t border-[#e6e0da] max-w-[160px] mx-auto" />
@@ -33,7 +33,7 @@ export default function Day6() {
 
       {/* 心得筆記 */}
       <div className="mt-10 max-w-3xl mx-auto text-[#504339] text-lg leading-relaxed">
-        <h2 className="text-2xl font-bold mb-4">📒 Day 6 心得筆記</h2>
+        <h2 className="text-2xl font-bold mb-4">📒 Day 07 心得筆記</h2>
         <p>
         今天是松山市區一日遊！早上先參觀松山城，我們選擇搭乘新奇的吊椅上山，主城天守閣內有許多實體展示，重現過去士兵如何攻防作戰。登上天守閣俯瞰整個松山市，視野遼闊，風景非常漂亮，非常值得買票進入。<br /><br />
         下午搭松山電車前往據說是《神隱少女》靈感來源的道後溫泉。由於溫泉需分開泡，我們選擇在本館旁的足湯步道稍作休息。當天氣溫接近零度，前幾天又走了很多路，雙腳泡進溫熱的溫泉水後，疲憊感瞬間消散，就算上半身吹著冷風也不覺得冷。當時幾乎沒有其他遊客，我們靜靜地泡了足湯一個多小時，才前往熱鬧的道後溫泉商店街。
@@ -44,9 +44,9 @@ export default function Day6() {
       <div className="mt-16">
         <DayNavigator
           prev="/day5"
-          prevLabel="Day 5"
+          prevLabel="Day 06"
           next="/day7"
-          nextLabel="Day 7"
+          nextLabel="Day 08"
           homeLink="/matsuyama"
         />
       </div>

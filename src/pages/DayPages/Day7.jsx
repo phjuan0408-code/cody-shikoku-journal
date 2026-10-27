@@ -9,7 +9,7 @@ export default function Day7() {
     <div className="shikoku-day bg-[#fdf6ef] py-12 px-4 font-serif">
       <div className="max-w-4xl mx-auto text-center space-y-2 mb-12">
         <p className="text-sm text-[#888]">高松機場</p>
-        <h1 className="text-4xl font-bold text-[#504339]">Day 7</h1>
+        <h1 className="text-4xl font-bold text-[#504339]">Day 08</h1>
         <p className="text-[#777] text-sm">2025.01.11</p>
 
         <hr className="my-6 border-t border-[#e6e0da] max-w-[160px] mx-auto" />
@@ -33,7 +33,7 @@ export default function Day7() {
 
       {/* 心得筆記 */}
       <div className="mt-10 max-w-3xl mx-auto text-[#504339] text-lg leading-relaxed">
-        <h2 className="text-2xl font-bold mb-4">📒 Day 7 心得筆記</h2>
+        <h2 className="text-2xl font-bold mb-4">📒 Day 08 心得筆記</h2>
         <p>
           最後一天從松山搭火車回高松搭飛機。早上先在松山市區吃了這趟旅行的最後一碗拉麵，是二郎系風格，鋪滿了現炒豆芽，份量超足，吃得很滿足！<br /><br />
 
@@ -49,9 +49,9 @@ export default function Day7() {
       <div className="mt-16">
         <DayNavigator
           prev="/day6"
-          prevLabel="Day 6"
+          prevLabel="Day 07"
           next="/day0"
-          nextLabel="Day 0"
+          nextLabel="Day 01"
           homeLink="/matsuyama"
         />
       </div>

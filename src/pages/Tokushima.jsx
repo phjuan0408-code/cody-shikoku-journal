@@ -6,9 +6,9 @@ import HotelCard from "../components/HotelCard";
 
 export default function Ehime() {
   const days = [
-    { day: "Day3", image: "./images/day3-2-nav.webp", link: "/day3"  },
-    { day: "Day4", image: "./images/day4-nav.webp", link: "/day4"  },
-    { day: "Day5", image: "./images/day5-1-nav.webp", link: "/day5"  },
+    { day: "Day 04", image: "./images/day3-2-nav.webp", link: "/day3"  },
+    { day: "Day 05", image: "./images/day4-nav.webp", link: "/day4"  },
+    { day: "Day 06", image: "./images/day5-1-nav.webp", link: "/day5"  },
   ];
 
   return (

@@ -9,7 +9,7 @@ export default function Day0() {
     <div className="shikoku-day bg-[#fdf6ef] py-12 px-4 font-serif">
       <div className="max-w-4xl mx-auto text-center space-y-2 mb-12">
         <p className="text-sm text-[#888]">桃園機場・高松機場</p>
-        <h1 className="text-4xl font-bold text-[#504339]">Day 0</h1>
+        <h1 className="text-4xl font-bold text-[#504339]">Day 01</h1>
         <p className="text-[#777] text-sm">2025.01.04</p>
 
         <hr className="my-6 border-t border-[#e6e0da] max-w-[160px] mx-auto" />
@@ -30,7 +30,7 @@ export default function Day0() {
       </div>
 
       <div className="mt-10 max-w-3xl mx-auto text-[#504339] text-lg leading-relaxed">
-        <h2 className="text-2xl font-bold mb-4">📒 Day 0 心得筆記</h2>
+        <h2 className="text-2xl font-bold mb-4">📒 Day 01 心得筆記</h2>
         <p>
           從台灣搭了三小時飛機來到四國。高松機場沒有地鐵接駁，但有依照班機時間運行的接駁巴士，準時又方便，很快就把我們送進市區。<br /><br />
 
@@ -44,9 +44,9 @@ export default function Day0() {
       <div className="mt-16">
         <DayNavigator
           prev="/day7"
-          prevLabel="Day 7"
+          prevLabel="Day 08"
           next="/day1"
-          nextLabel="Day 1"
+          nextLabel="Day 02"
           homeLink="/takamatsu"
         />
       </div>

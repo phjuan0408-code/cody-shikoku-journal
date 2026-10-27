@@ -9,7 +9,7 @@ export default function Day3() {
     <div className="shikoku-day bg-[#fdf6ef] py-12 px-4 font-serif">
       <div className="max-w-4xl mx-auto text-center space-y-2 mb-12">
         <p className="text-sm text-[#888]">栗林公園・阿波舞會館</p>
-        <h1 className="text-4xl font-bold text-[#504339]">Day 3</h1>
+        <h1 className="text-4xl font-bold text-[#504339]">Day 04</h1>
         <p className="text-[#777] text-sm">2025.01.07</p>
 
         <hr className="my-6 border-t border-[#e6e0da] max-w-[160px] mx-auto" />
@@ -33,7 +33,7 @@ export default function Day3() {
 
       {/* 心得筆記 */}
       <div className="mt-10 max-w-3xl mx-auto text-[#504339] text-lg leading-relaxed">
-        <h2 className="text-2xl font-bold mb-4">📒 Day 3 心得筆記</h2>
+        <h2 className="text-2xl font-bold mb-4">📒 Day 04 心得筆記</h2>
         <p>
           今天從高松移動到德島！早上先造訪了壯麗的栗林公園，拿著地圖在園區中穿梭，像是在玩一場有趣的大地遊戲。<br />
           <br />
@@ -46,9 +46,9 @@ export default function Day3() {
       <div className="mt-16">
         <DayNavigator
           prev="/day2"
-          prevLabel="Day 2"
+          prevLabel="Day 03"
           next="/day4"
-          nextLabel="Day 4"
+          nextLabel="Day 05"
           homeLink="/takamatsu"
         />
       </div>

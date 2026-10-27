@@ -9,7 +9,7 @@ export default function Day1() {
     <div className="shikoku-day bg-[#fdf6ef] py-12 px-4 font-serif">
       <div className="max-w-4xl mx-auto text-center space-y-2 mb-12">
         <p className="text-sm text-[#888]">小豆島</p>
-        <h1 className="text-4xl font-bold text-[#504339]">Day 1</h1>
+        <h1 className="text-4xl font-bold text-[#504339]">Day 02</h1>
         <p className="text-[#777] text-sm">2025.01.05</p>
 
         <hr className="my-6 border-t border-[#e6e0da] max-w-[160px] mx-auto" />
@@ -30,7 +30,7 @@ export default function Day1() {
       </div>
 
       <div className="mt-10 max-w-3xl mx-auto text-[#504339] text-lg leading-relaxed">
-        <h2 className="text-2xl font-bold mb-4">📒 Day 1 心得筆記</h2>
+        <h2 className="text-2xl font-bold mb-4">📒 Day 02 心得筆記</h2>
         <p>
         這趟小豆島之旅充滿了意外與驚喜。為了搭上前往小豆島的船，我們特地早起，卻親眼看著船從眼前駛離，下一班還得再等一個小時。沒想到回程時也發生一樣的情況，在島上又多待了一個小時。不過旅行的樂趣，也正是在這些不確定與插曲中展現出來的吧！<br /><br />
 
@@ -42,9 +42,9 @@ export default function Day1() {
       <div className="mt-16">
         <DayNavigator
           prev="/day0"
-          prevLabel="Day 0"
+          prevLabel="Day 01"
           next="/day2"
-          nextLabel="Day 2"
+          nextLabel="Day 03"
           homeLink="/takamatsu"
         />
       </div>

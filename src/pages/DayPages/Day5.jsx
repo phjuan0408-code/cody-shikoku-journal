@@ -9,7 +9,7 @@ export default function Day5() {
     <div className="shikoku-day bg-[#fdf6ef] py-12 px-4 font-serif">
       <div className="max-w-4xl mx-auto text-center space-y-2 mb-12">
         <p className="text-sm text-[#888]">梅津寺・高島屋摩天輪</p>
-        <h1 className="text-4xl font-bold text-[#504339]">Day 5</h1>
+        <h1 className="text-4xl font-bold text-[#504339]">Day 06</h1>
         <p className="text-[#777] text-sm">2025.01.09</p>
 
         <hr className="my-6 border-t border-[#e6e0da] max-w-[160px] mx-auto" />
@@ -33,7 +33,7 @@ export default function Day5() {
 
       {/* 心得筆記 */}
       <div className="mt-10 max-w-3xl mx-auto text-[#504339] text-lg leading-relaxed">
-        <h2 className="text-2xl font-bold mb-4">📒 Day 5 心得筆記</h2>
+        <h2 className="text-2xl font-bold mb-4">📒 Day 06 心得筆記</h2>
         <p>
         今天從德島移動到松山！一大早在德島車站吃了暖呼呼的烏龍麵當早餐後，搭了四小時的火車一路來到松山。到達時正好趕上夕陽，我們馬上衝去傳說中的梅津寺車站看日落。月台旁邊就是海灘，乾淨的海水配上夕陽，美到無話可說。車站旁還有橘子主題的紀念品店，我們買了橘子鹽和七味粉（超好吃）！<br />
         <br />
@@ -46,9 +46,9 @@ export default function Day5() {
       <div className="mt-16">
         <DayNavigator
           prev="/day4"
-          prevLabel="Day 4"
+          prevLabel="Day 05"
           next="/day6"
-          nextLabel="Day 6"
+          nextLabel="Day 07"
           homeLink="/tokushima"
         />
       </div>
